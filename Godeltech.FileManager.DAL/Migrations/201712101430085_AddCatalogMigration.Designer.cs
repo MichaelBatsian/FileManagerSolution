@@ -13,7 +13,7 @@ namespace Godeltech.FileManager.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201712101342006_AddCatalogMigration"; }
+            get { return "201712101430085_AddCatalogMigration"; }
         }
         
         string IMigrationMetadata.Source

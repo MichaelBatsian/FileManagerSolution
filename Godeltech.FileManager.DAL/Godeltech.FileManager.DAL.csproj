@@ -61,9 +61,9 @@
     <Compile Include="Migrations\201712100835273_InitialCreate.Designer.cs">
       <DependentUpon>201712100835273_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712101342006_AddCatalogMigration.cs" />
-    <Compile Include="Migrations\201712101342006_AddCatalogMigration.Designer.cs">
-      <DependentUpon>201712101342006_AddCatalogMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201712101430085_AddCatalogMigration.cs" />
+    <Compile Include="Migrations\201712101430085_AddCatalogMigration.Designer.cs">
+      <DependentUpon>201712101430085_AddCatalogMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,8 +73,8 @@
     <EmbeddedResource Include="Migrations\201712100835273_InitialCreate.resx">
       <DependentUpon>201712100835273_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712101342006_AddCatalogMigration.resx">
-      <DependentUpon>201712101342006_AddCatalogMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712101430085_AddCatalogMigration.resx">
+      <DependentUpon>201712101430085_AddCatalogMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

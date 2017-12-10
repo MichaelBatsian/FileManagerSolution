@@ -10,7 +10,9 @@ namespace Godeltech.FileManager.DAL.Map
             HasKey(u => u.Login).Property(u => u.Login).HasMaxLength(30);
             Property(u => u.Password).IsRequired();
             Property(u => u.CreationDate).IsRequired();
-            HasMany(u => u.Catalogs).WithRequired(u => u.Users);
+            HasMany(u => u.Catalogs)
+                .WithRequired(u => u.Users)
+                .Map(c=>c.MapKey("Login"));
         }
     }
 }
