@@ -53,9 +53,12 @@
   <ItemGroup>
     <Compile Include="EF\FileManagerContext.cs" />
     <Compile Include="Entities\Catalogs.cs" />
+    <Compile Include="Entities\Files.cs" />
     <Compile Include="Entities\Users.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Map\CatalogsMap.cs" />
+    <Compile Include="Map\FilesMap.cs" />
     <Compile Include="Map\UsersMap.cs" />
     <Compile Include="Migrations\201712100835273_InitialCreate.cs" />
     <Compile Include="Migrations\201712100835273_InitialCreate.Designer.cs">
@@ -65,8 +68,15 @@
     <Compile Include="Migrations\201712101430085_AddCatalogMigration.Designer.cs">
       <DependentUpon>201712101430085_AddCatalogMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712101623038_AddFilesMigration.cs" />
+    <Compile Include="Migrations\201712101623038_AddFilesMigration.Designer.cs">
+      <DependentUpon>201712101623038_AddFilesMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CatalogsRepository.cs" />
+    <Compile Include="Repositories\FilesRepository.cs" />
+    <Compile Include="Repositories\UnitOfWorkEF.cs" />
     <Compile Include="Repositories\UsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712101430085_AddCatalogMigration.resx">
       <DependentUpon>201712101430085_AddCatalogMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712101623038_AddFilesMigration.resx">
+      <DependentUpon>201712101623038_AddFilesMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

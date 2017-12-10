@@ -8,10 +8,10 @@ namespace Godeltech.FileManager.DAL.Map
         internal UsersMap()
         {
             HasKey(u => u.Login).Property(u => u.Login).HasMaxLength(30);
-            Property(u => u.Password).IsRequired();
+            Property(u => u.Password).IsRequired().HasMaxLength(120);
             Property(u => u.CreationDate).IsRequired();
             HasMany(u => u.Catalogs)
-                .WithRequired(u => u.Users)
+                .WithRequired(c => c.Users)
                 .Map(c=>c.MapKey("Login"));
         }
     }

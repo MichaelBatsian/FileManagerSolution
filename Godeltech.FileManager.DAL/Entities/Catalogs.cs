@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Godeltech.FileManager.DAL.Entities
 {
@@ -11,5 +12,6 @@ namespace Godeltech.FileManager.DAL.Entities
         public int ParentId { get; set; }
 
         public virtual Users Users { get; set; }
+        public virtual List<Files> Files  { get; set; } = new List<Files>();
     }
 }
