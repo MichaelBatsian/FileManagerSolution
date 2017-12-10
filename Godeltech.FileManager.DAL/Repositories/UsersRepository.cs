@@ -32,7 +32,8 @@ namespace Godeltech.FileManager.DAL.Repositories
 
         public void Create(Users item)
         {
-            throw new NotImplementedException();
+            _context.Users.Add(item);
+            _context.SaveChanges();
         }
 
         public void Update(Users item)
