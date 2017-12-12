@@ -41,6 +41,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -52,17 +55,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presenters\AuthPresenter.cs" />
+    <Compile Include="Presenters\UserPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Ninject\NinjectKernel.cs" />
+    <Compile Include="Services\Ninject\ServicesBindings.cs" />
+    <Compile Include="UI\MainInterface.cs" />
+    <Compile Include="UI\ViewsConsole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Godeltech.FileManager.DAL\Godeltech.FileManager.DAL.csproj">
-      <Project>{4fc0b0af-7993-466f-bbdc-0710516a5fae}</Project>
-      <Name>Godeltech.FileManager.DAL</Name>
+    <ProjectReference Include="..\Godeltech.FileManager.BLL\Godeltech.FileManager.BLL.csproj">
+      <Project>{49b543a3-f24e-4094-9086-dd7ebabd0367}</Project>
+      <Name>Godeltech.FileManager.BLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

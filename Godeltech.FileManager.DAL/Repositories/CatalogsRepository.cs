@@ -22,7 +22,7 @@ namespace Godeltech.FileManager.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Catalogs Get(int id)
+        public Catalogs Get(Catalogs item)
         {
             throw new NotImplementedException();
         }
@@ -42,7 +42,7 @@ namespace Godeltech.FileManager.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public void Delete(int id)
+        public void Delete(Catalogs item)
         {
             throw new NotImplementedException();
         }

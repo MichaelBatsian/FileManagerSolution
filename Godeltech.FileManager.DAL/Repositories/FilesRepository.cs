@@ -19,7 +19,7 @@ namespace Godeltech.FileManager.DAL.Repositories
             return _context.Files;
         }
 
-        public Files Get(int id)
+        public Files Get(Files item)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +40,7 @@ namespace Godeltech.FileManager.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public void Delete(int id)
+        public void Delete(Files id)
         {
             throw new NotImplementedException();
         }

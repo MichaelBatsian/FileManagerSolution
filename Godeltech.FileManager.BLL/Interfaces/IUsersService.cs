@@ -9,6 +9,6 @@ namespace Godeltech.FileManager.BLL.Interfaces
 {
     public interface IUsersService
     {
-        UsersDTO GetUser();
+        UsersDTO GetUser(string login,string password);
     }
 }

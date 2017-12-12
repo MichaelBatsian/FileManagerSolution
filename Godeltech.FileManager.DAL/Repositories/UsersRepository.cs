@@ -20,9 +20,9 @@ namespace Godeltech.FileManager.DAL.Repositories
             return _context.Users;
         }
 
-        public Users Get(int id)
+        public Users Get(Users obj)
         {
-            throw new NotImplementedException();
+            return _context.Users.SingleOrDefault(u => u.Login==obj.Login);
         }
 
         public IEnumerable<Users> Find(Func<Users, bool> predicate)
@@ -41,7 +41,7 @@ namespace Godeltech.FileManager.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public void Delete(int id)
+        public void Delete(Users item)
         {
             throw new NotImplementedException();
         }

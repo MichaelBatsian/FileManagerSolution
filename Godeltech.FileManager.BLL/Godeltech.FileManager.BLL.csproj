@@ -30,12 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,16 +52,18 @@
     <Compile Include="DTO\CatalogsDTO.cs" />
     <Compile Include="DTO\FilesDTO.cs" />
     <Compile Include="DTO\UsersDTO.cs" />
+    <Compile Include="ImplServices\AuthService.cs" />
+    <Compile Include="ImplServices\IocService.cs" />
+    <Compile Include="ImplServices\UsersService.cs" />
     <Compile Include="Infrastructure\Ninject\NinjectKernel.cs" />
     <Compile Include="Infrastructure\Ninject\ServiceModule.cs" />
+    <Compile Include="Interfaces\IAuthentication.cs" />
     <Compile Include="Interfaces\ICatalogsService.cs" />
     <Compile Include="Interfaces\IFilesService.cs" />
     <Compile Include="Interfaces\IUsersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ImplServices\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
